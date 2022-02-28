@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Building a Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1 id="title">House Cleaning Survey</h1>
+
+<p id="description">This survey is intented to avaliate the house cleaning services for the last 6 months. Please take a moment to answer it as it will help us to improve our services. Thank you. Housing & Cleaning Co.</p>
+
+<form id="survey-form">
+
+  <label id="name-label">Enter your full name: <input type="text" id="name" required placeholder="Your name and surname" /></label>
+  <label id="email-label">Enter your email: <input type="email" id="email" required placeholder="YourEmail@emailProvider.com" /></label>
+  <label id="number-label">Enter your age: <input type="number" id="number" min="16" max="99" placeholder="e.g.: 25" /></label>
+
+  <label id="dropdown-label">Please select your "household" type:
+    <select id="dropdown">
+      <option value="0" disabled selected>Select One</option>
+      <option value="living-alone">Living Alone</option>
+      <option value="sharing-with-friends">Sharing with Friends</option>
+      <option value="living-in-a-couple-(without-kids)">Living in a Couple (without kids)</option>
+      <option value="living-in-a-couple-(with-kids)">Living in a Couple (with kids)</option>
+    </select></label>
+
+  <fieldset>
+    <p>Would you describe your household as:</p>
+    <label><input value="organized" type="checkbox" name="checkbox-buttom" /> Organized</label>
+    <label><input value="clean" type="checkbox" name="checkbox-buttom" /> Clean</label>
+    <label><input value="okay" type="checkbox" name="checkbox-buttom" /> Okay</label>
+    <label><input value="a-little-bit-messy" type="checkbox" name="checkbox-buttom" /> A little bit messy</label>
+    <label><input value="very-messy" type="checkbox" name="checkbox-buttom" /> Very messy</label>
+  </fieldset>
+
+  <fieldset>
+    <p>How long have you been using your services for?</p>
+    <label><input value="less_than_6_months" type="radio" name="radio-buttom" /> Less than 6 Months</label>
+    <label><input value="6_months_to_1_year" type="radio" name="radio-buttom" /> 6 Months to 1 Year</label>
+    <label><input value="1_year_to_2_years" type="radio" name="radio-buttom" /> 1 Year to 2 Years</label>
+    <label><input value="more_than_2_years" type="radio" name="radio-buttom" /> More than 2 Years</label>
+  </fieldset>
+
+  <fieldset>
+    <p>Which services have you used or do you :</p>
+    <label><input value="basic_house_cleaning" type="checkbox" name="checkbox-buttom" /> Basic House Cleaning</label>
+    <label><input value="deep_cleaning_or_spring_cleaning" type="checkbox" name="checkbox-buttom" /> Deep Cleaning/Spring Cleaning</label>
+    <label><input value="laundry_services" type="checkbox" name="checkbox-buttom" /> Laundry Services</label>
+    <label><input value="carpet_cleaning" type="checkbox" name="checkbox-buttom" /> Carpet Cleaning</label>
+    <label><input value="blind_cleaning" type="checkbox" name="checkbox-buttom" /> Blind Cleaning</label>
+    <label><input value="curtain_cleaning" type="checkbox" name="checkbox-buttom" /> Curtain Cleaning</label>
+    <label><input value="upholstery_cleaning" type="checkbox" name="checkbox-buttom" /> Upholstery Cleaning</label>
+    <label><input value="window_cleaning" type="checkbox" name="checkbox-buttom" /> Window Cleaning</label>
+    <label><input value="ceiling_and_wall_cleaning" type="checkbox" name="checkbox-buttom" /> Ceiling and Wall Cleaning</label>
+    <label><input value="chimney_sweeping" type="checkbox" name="checkbox-buttom" /> Chimney Sweeping</label>
+    <label><input value="pressure_washing" type="checkbox" name="checkbox-buttom" /> Pressure Washing</label>
+    <label><input value="green_cleaning" type="checkbox" name="checkbox-buttom" /> Green Cleaning</label>
+    <label><input value="disaster_cleaning_and_restoration" type="checkbox" name="checkbox-buttom" /> Disaster Cleaning and Restoration</label>
+    <label><input value="sanitization_services" type="checkbox" name="checkbox-buttom" /> Sanitization Services</label>
+  </fieldset>
+
+  <fieldset>
+    <p>How satisfied are you about your services?</p>
+    <label><input value="very_satisfied" type="radio" name="radio-buttom" /> Very Satisfied</label>
+    <label><input value="Satisfied" type="radio" name="radio-buttom" /> Satisfied</label>
+    <label><input value="okay" type="radio" name="radio-buttom" /> Okay</label>
+    <label><input value="disappointed" type="radio" name="radio-buttom" /> Disappointed</label>
+    <label><input value="very_disappointed" type="radio" name="radio-buttom" /> Very Dissapointed</label>
+  </fieldset>
+
+  <fieldset>
+    <textarea name="suggestions" rows="4" cols="50" placeholder="Please add any suggestions or comments"></textarea>
+  </fieldset>
+
+  <input id="submit" type="submit" value="Submit" />
+
+</form>
+</body>
+</html>
